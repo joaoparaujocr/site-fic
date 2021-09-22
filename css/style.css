@@ -1,0 +1,594 @@
+/*Formatação da página*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans";
+}
+
+html, body{
+    height: 100%;
+}
+/**********************/
+
+/*Classes universais*/
+.clear{clear: both;}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*********************/
+
+
+/*Header*/
+header{
+    padding: 0 1%;
+    background-image: url(../images/capa.png);
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+
+header .logo{
+    position: relative;
+    top: 10px;
+    background-image: url(../images/og-img-removebg-preview.png);
+    width: 180px;
+    height: 50px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+nav.menu-desktop{
+    float: right;
+}
+
+nav.menu-desktop ul{
+    margin: 20px;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+nav.menu-desktop ul li{
+    float: left;
+    margin-left: 40px;
+}
+
+nav.menu-desktop ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.chamada-1{
+    position: absolute;
+    float: right;
+    width: 100%;
+    max-width: 600px;
+    right: 18%;
+    top: 32%;
+    color: white;
+}
+
+.chamada-1 h1{
+    font-size: 32px;
+    font-weight: 600;
+}
+/*******************************/
+
+/*Section class="section-1"*/
+section.section-1{
+    background-color: #4d2b68;
+    width: 100%;
+    padding: 0 2%;
+}
+
+.section-1 .container{
+    max-height: 400px;
+}
+
+.section-1 .text-list{
+    width: 50%;
+    float: left;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.section-1 h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.section-1 p{
+    color: white;
+
+}
+
+.section-1 ul{
+    margin-top: 15px;
+    list-style-position: inside;
+    color: white;
+}
+
+.section-1 a{
+    border-radius: 20px;
+    display: inline-block;
+    background-color: #ff7c38;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+
+.device{
+    float: left;
+    width: 50%;
+    height: 430px;
+    background-image: url(../images/device.png);
+    background-size: 100% 100%;
+    position: relative;
+    top: -30px;
+}
+/****************************/
+
+/*Section class="section-2"*/
+section.section-2{
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    color: #4d2b68;
+    padding-bottom: 200px;
+}
+
+section.section-2 .container{
+    position: relative;
+}
+
+section.section-2 p{
+    width: 100%;
+    max-width: 900px;
+    display: inline-block;
+    margin: 10px 0 30px 0;
+}
+
+.section-2 .img{
+    background-image: url(../images/mockup.jpg);
+    width: 92%;
+    height: 400px;
+    background-size: 100% 100%;
+    background-position: center;
+    max-width: 900px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-box-shadow: 0px 0px 9px 3px #000000; 
+    box-shadow: 0px 0px 9px 3px #000000;
+    border-radius: 20px;
+}
+
+section.section-3{
+    width: 100%;
+}
+
+.box-text{
+    width: 50%;
+    float: left;
+    background-color: #8766aa;
+    color: white;
+    padding-top: 210px;
+    padding-bottom: 50px;
+}
+
+.box-text .text{
+    float: right;
+    width: 100%;
+    max-width: 480px;
+    padding: 0 30px;
+}
+
+.text h1{
+    font-style: italic;
+    font-weight: 300;
+}
+
+.scroll-autor{
+    padding-left: 0;
+    max-width: 600px;
+    overflow: hidden;
+}
+
+.scroll-box{
+    width: 100%;
+}
+
+.sobre-autor{
+    float: left;
+    width: 100%;
+}
+
+.titulo-autor{
+    width: 100%;
+    float: left;
+}
+
+.box-autor{
+    width: 50%;
+    float: left;
+    padding-top: 210px;
+    padding-left: 30px;
+    padding-right: 2%;
+}
+
+.box-autor .autor{
+    float: left;
+    text-align: center;
+}
+
+.box-autor h1{
+    color: #4d2b68;
+    font-weight: 500;
+}
+
+.autor p{
+    font-weight: 500;
+    font-style: italic;
+    color: gray;
+}
+
+.box-autor .img-autor{
+    position: relative;
+    height: 45px;
+    width: 45px;
+    background-image: url(../images/actor1.png);
+    float: left;
+    background-size: 100% 100%;
+}
+
+.box-autor .texto-autor{
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 440px;
+    width: 100%;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    margin-top: 3px;
+}
+
+.slider-bullets span{
+    margin-right: 10px;
+    height: 10px;
+    cursor: pointer;
+    float: left;
+    width: 10px;
+    border-radius: 50%;
+    background-color: gray;
+}
+
+.slider-bullets span:hover{
+    background-color: rgb(170, 170, 170);
+}
+
+section.section-4{
+    width: 100%;
+    background-color: #4d2b68;
+    color: white;
+    padding: 70px 0;
+}
+
+.section-4 .text-input{
+    width: 50%;
+    float: left;
+    padding: 0 5%;
+}
+
+.text-input h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.text-input p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.text-input input[type=text],
+.text-input input[type=email]{
+    width: 100%;
+    border: 0;
+    outline: none;
+    height: 45px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 45px;
+    padding-left: 5px;
+}
+
+form textarea{
+    resize: none;
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    font-size: 20px;
+    outline: 0;
+}
+
+.mapa-main{
+    width: 50%;
+    float: left;
+    padding: 0 5%;
+}
+
+.mapa-main h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.mapa-1{
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    background-color: black;
+}
+
+.mapa-2{
+    width: 100%;
+    max-width: 480px;
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border: 5px solid gray;
+}
+
+footer{
+    background-color: #1c2025;
+    padding: 90px 30px;
+    color: white;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-last-child(1){
+    float: right;
+}
+
+@media screen and (max-width: 760px){
+    header{
+        padding: 0 2%;
+        background-image: url(../images/capa.png);
+        width: 100%;
+        height: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .chamada-1{
+        padding: 10% 0;
+        position: static;
+        float: none;
+        display: inline-block;
+    }
+    
+    .chamada-1 h1{
+        font-size: 28px;
+        font-weight: 600;
+    }
+
+    .section-1 .text-list{
+        padding: 30px 0;
+        width: 100%;
+        float: none;
+        position: static;
+        text-align: center;
+    }
+
+    .text-list h1{
+        font-size: 28px;
+    }
+
+    .section-1 ul{
+        text-align: left;
+        display: inline-block;
+    }
+    
+    .section-1 a{
+        margin: 20px 0;
+        display: inline-block;
+    }
+
+    .device{
+        display: none;
+    }
+
+    .section-4 .container{
+        text-align: center;
+    }
+
+    .section-4 .text-input{
+        max-width: 500px;
+        width: 100%;
+        float: none;
+        display: inline-block;
+    }
+
+    .mapa-main{
+        margin-top: 30px;
+        width: 100%;
+        float: none;
+        text-align: center;
+    }
+
+    .mapa-1{
+        display: inline-block;
+    }
+
+    .mapa-2{
+        position: relative;
+    }
+
+    footer{
+        text-align: center;
+    }
+
+    footer p:nth-of-type(1),
+    footer p:nth-of-type(2){
+        float: none;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 595px){
+    #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        z-index: 2;
+        position: fixed;
+        background: none;
+        border: 0;
+        cursor: pointer;
+        background: none;
+    }
+
+    #nav.active #menu{
+        display: block;
+    }
+
+    #nav.active #hamburger{
+        border-top: 0;
+    }
+
+    #nav.active #hamburger::after{
+        transform: rotate(-135deg);
+    }
+
+    #nav.active #hamburger::before{
+        transform: rotate(135deg);
+        top: 8px;
+    }
+
+    #hamburger{
+        width: 28px;
+        border-top: 3px solid white;
+    }
+
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 28px;
+        height: 3px;
+        background-color: white;
+        margin-top: 5px;
+        transition: 0.6s;
+        position: relative;
+    }
+
+    nav.menu-desktop{
+        float: none;
+    }
+    
+    nav.menu-desktop ul{
+        text-align: center;
+        margin: 0;
+    }
+    
+    nav.menu-desktop ul li{
+        padding: 20px 0;
+        float: none;
+        margin-left: 0;
+        border-bottom: white 1px solid;
+    }
+
+    #menu{
+        display: none;
+        padding-top: 50px;
+        margin-left: 0;
+        position: absolute;
+        width: 100%;
+        height: calc(60vh);
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: #8766aa;
+        position: fixed;
+    }
+
+    .box-text{
+        width: 100%;
+        float: none;
+        padding-bottom: 20px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    
+    .box-text .text{
+        display: inline-block;
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    
+    .box-autor{
+        width: 100%;
+        float: none;
+        padding: 30px 5%;
+    }
+    
+    .box-autor .autor{
+        float: left;
+        text-align: center;
+    }
+    
+    .box-autor h1{
+        color: #4d2b68;
+        font-weight: 500;
+    }
+    
+    .autor p{
+        font-weight: 500;
+        font-style: italic;
+        color: gray;
+    }
+    
+    .box-autor .img-autor{
+        margin-top: 5px;
+        height: 45px;
+        width: 45px;
+        background-image: url(../images/actor1.png);
+        display: inline-block;
+        background-size: 100% 100%;
+    }
+    
+    
+}
